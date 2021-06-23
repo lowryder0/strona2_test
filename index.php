@@ -7,7 +7,7 @@
         $result = $crud->getSpecialities();
     ?>
     <br>
-    <h1 class="text-center">Registration for drugs</h1>
+    <h1 class="text-center">Just Registration</h1>
     <br>
 
     <form method="post" action="succes.php"> 

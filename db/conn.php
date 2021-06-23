@@ -1,10 +1,17 @@
 <?php
-    $host ='127.0.0.1';
-    $db = 'strona2_db';
-    $user = 'root';
-    $pass = '';
-    $charset = 'utf8mb4';
+    // $host ='127.0.0.1';
+    // $db = 'strona2_db';
+    // $user = 'root';
+    // $pass = '';
+    // $charset = 'utf8mb4';
 
+    //Remote Database Connection
+    $host ='sql11.freemysqlhosting.net';
+    $db = 'sql11420761';
+    $user = 'sql11420761';
+    $pass = 'xrlZN1WRSC';
+    $charset = 'utf8mb4';
+    
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
     try
