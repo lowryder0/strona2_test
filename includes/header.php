@@ -1,3 +1,6 @@
+<?php
+  include_once 'includes/session.php'
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,6 +34,24 @@
         <li class="nav-item">
           <a class="nav-link" href="viewrecord.php">View Attendees</a>
         </li>
+        <div class="navbar-nav ml-auto">
+          <?php 
+              if(!isset($_SESSION['userid']))
+              {
+          ?>
+            <a class="nav-item nav-link" href="login.php">Login <span class="sr-only"></span></a>
+          <?php 
+              } 
+        else 
+              { 
+          ?>
+            <a class="nav-item nav-link" href="#"><span>Hello <?php echo $_SESSION['username'] ?>! </span> <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only"></span></a>
+          <?php 
+              } 
+          ?>
+        </div>
+        
         
       </ul>
     </div>
